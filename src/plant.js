@@ -9,7 +9,7 @@ const changeState = (prop) => {
 
 const storeState = () => {
   let currentState = {};
-  return (stateChangeFunction) => {
+  return (stateChangeFunction = state => state) => {
     const newState = stateChangeFunction(currentState);
     currentState = {...newState};
     return newState;
