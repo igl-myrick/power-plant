@@ -1,4 +1,4 @@
-const storeState = () => {
+export const storeState = () => {
   let currentState = {};
   return (stateChangeFunction = state => state) => {
     const newState = stateChangeFunction(currentState);
