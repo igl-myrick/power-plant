@@ -8,4 +8,8 @@ describe("changeState", () => {
   test("should correctly return an object", () => {
     expect(typeof updatedPlant).toEqual("object");
   });
+
+  test("should correctly increment the given property", () => {
+    expect(updatedPlant).toEqual({ soil: 1, light: 0, water: 0 });
+  });
 });
