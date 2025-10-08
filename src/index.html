@@ -5,27 +5,44 @@
   </head>
   <body>
     <div class="container">
-      <h2>Power Plant</h2>
-      <div class="col-md-9" id="main-content">
-        <h4>Your Plants</h4>
-        <div id="apple-tree">
-          <h5>Apple Tree</h5>
-          <div class="apple-tree-info">
-            
-          </div>
-          <div class="col-md-4">
-            <p>Add soil</p>
-          </div>
-          <div class="col-md-4">
-            <p>Add light</p>
-          </div>
-          <div class="col-md-4">
-            <p>Add water</p>
+      <div class="row">
+        <h2 class="text-center">Power Plant</h2>
+        <div class="col-md-8">
+          <div class="border rounded p2" id="main-content">
+            <h4>Your Plants</h4>
+            <div id="apple-tree">
+              <h5>Apple Tree</h5>
+              <div class="apple-tree-info">
+                
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <p class="float-end">Add soil:</p>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" id="apple-tree-soil-button">Soil +5</button>
+                </div>
+                <div class="col-md-2">
+                  <p class="float-end">Add light:</p>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" id="apple-tree-light-button">Light +5</button>
+                </div>
+                <div class="col-md-2">
+                  <p class="float-end">Add water:</p>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" id="apple-tree-water-button">Water +5</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3" id="side-panel">
-
+        <div class="col-md-4 float-end">
+          <div class="border rounded p2" id="side-panel">
+            <p>test</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
