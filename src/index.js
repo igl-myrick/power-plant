@@ -11,5 +11,8 @@ function addPlant(plantName) {
 
   const mainContent = document.getElementById("main-content");
   const plantWrapper = document.createElement("div");
-
+  plantWrapper.setAttribute("id", `${plantName}-info`);
+  const title = document.createElement("h5");
+  title.textContent = `${plantName}`.replace(/\s+/g, '-');
+  title.setAttribute("id", `${plantName}-description`);
 }
